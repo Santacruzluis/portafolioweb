@@ -36,9 +36,6 @@ async function bootstrap() {
     }),
   );
   
-  // Agregar prefijo global /api
-  app.setGlobalPrefix('api');
-  
   // Swagger documentation
   const config = new DocumentBuilder()
     .setTitle('API Documentation')
