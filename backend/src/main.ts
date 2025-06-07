@@ -16,11 +16,10 @@ async function bootstrap() {
   app.use(helmet());
   app.use(compression());
   
-  // CORS configuration
+  // Configurar CORS
   app.enableCors({
-    origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
   
@@ -33,7 +32,7 @@ async function bootstrap() {
     }),
   );
   
-  // Global prefix for API routes
+  // Agregar prefijo global /api
   app.setGlobalPrefix('api');
   
   // Swagger documentation
@@ -46,9 +45,8 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/docs', app, document);
   
-  const port = process.env.PORT || 3001;
-  await app.listen(port);
-  console.log(`🚀 Server running on http://localhost:${port}`);
-  console.log(`📚 API Documentation available at http://localhost:${port}/api/docs`);
+  await app.listen(process.env.PORT || 3001);
+  console.log(`🚀 Server running on http://localhost:${process.env.PORT || 3001}`);
+  console.log(`📚 API Documentation available at http://localhost:${process.env.PORT || 3001}/api/docs`);
 }
 bootstrap();

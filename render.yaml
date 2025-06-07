@@ -1,0 +1,24 @@
+services:
+  # Frontend Service
+  - type: web
+    name: portafolio-frontend
+    env: node
+    buildCommand: cd frontend && yarn install && yarn build
+    startCommand: cd frontend && yarn start
+    envVars:
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /
+    autoDeploy: true
+
+  # Backend Service
+  - type: web
+    name: portafolio-backend
+    env: node
+    buildCommand: cd backend && yarn install && yarn build
+    startCommand: cd backend && yarn start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /api
+    autoDeploy: true 
