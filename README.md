@@ -1,4 +1,4 @@
-# Proyecto Web - Full Stack
+# Proyecto Web 
 
 Proyecto desarrollado con **React/Next.js** para el frontend y **NestJS con Express** para el backend.
 
