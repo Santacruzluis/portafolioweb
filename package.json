@@ -1,0 +1,38 @@
+{
+  "name": "proyecto-web-fullstack",
+  "version": "1.0.0",
+  "description": "Proyecto Full Stack con Next.js y NestJS",
+  "private": true,
+  "scripts": {
+    "install:all": "yarn install:frontend && yarn install:backend",
+    "install:frontend": "cd frontend && yarn install",
+    "install:backend": "cd backend && yarn install",
+    "dev": "concurrently \"yarn dev:backend\" \"yarn dev:frontend\"",
+    "dev:frontend": "cd frontend && yarn dev",
+    "dev:backend": "cd backend && yarn start:dev",
+    "build": "yarn build:frontend && yarn build:backend",
+    "build:frontend": "cd frontend && yarn build",
+    "build:backend": "cd backend && yarn build",
+    "start": "concurrently \"yarn start:backend\" \"yarn start:frontend\"",
+    "start:frontend": "cd frontend && yarn start",
+    "start:backend": "cd backend && yarn start:prod",
+    "lint": "yarn lint:frontend && yarn lint:backend",
+    "lint:frontend": "cd frontend && yarn lint",
+    "lint:backend": "cd backend && yarn lint",
+    "test": "yarn test:frontend && yarn test:backend",
+    "test:frontend": "cd frontend && yarn test",
+    "test:backend": "cd backend && yarn test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "nextjs",
+    "nestjs",
+    "react",
+    "typescript",
+    "fullstack"
+  ],
+  "author": "Luis Santacruz",
+  "license": "MIT"
+}
