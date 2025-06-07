@@ -3,6 +3,7 @@ services:
   - type: web
     name: portafolio-frontend
     env: node
+    plan: free
     buildCommand: cd frontend && yarn install && yarn build
     startCommand: cd frontend && yarn start
     envVars:
@@ -15,6 +16,7 @@ services:
   - type: web
     name: portafolio-backend
     env: node
+    plan: free
     buildCommand: cd backend && yarn install && yarn build
     startCommand: cd backend && yarn start:prod
     envVars:

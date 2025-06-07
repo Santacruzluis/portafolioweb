@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Optimizaciones para el plan gratuito
+  output: 'standalone',
+  poweredByHeader: false,
+  reactStrictMode: true,
   async rewrites() {
     return [
       {
