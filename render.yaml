@@ -9,6 +9,8 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: BACKEND_URL
+        value: https://portafolio-backend-iz92.onrender.com
     healthCheckPath: /
     autoDeploy: true
 
@@ -17,10 +19,12 @@ services:
     name: portafolio-backend
     env: node
     plan: free
-    buildCommand: cd backend && yarn install && yarn build
+    buildCommand: cd backend && yarn install && npx nest build
     startCommand: cd backend && yarn start:prod
     envVars:
       - key: NODE_ENV
         value: production
+      - key: FRONTEND_URL
+        value: https://portafolio-frontend-sehm.onrender.com
     healthCheckPath: /api
     autoDeploy: true 
