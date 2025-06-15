@@ -27,7 +27,7 @@ export default function Projects() {
       technologies: "Flutter, Dart",
       description:
         "Aplicación móvil desarrollada con Flutter que implementa diversas funcionalidades y características modernas.",
-      image: "/images/flutter.png?height=200&width=200",
+      image: "/images/Flutter.png?height=200&width=200",
       githubUrl: "https://github.com/Acosta-Saul/flutter-app.git"
     },
     {
