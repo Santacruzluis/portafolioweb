@@ -72,11 +72,11 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button asChild variant="outline" className="ml-4">
-              <a href="/cv-luis-santacruz.pdf" download>
-                Descargar CV
-              </a>
-            </Button>
+              <Button asChild variant="outline" size="lg">
+                <a href="/documents/Luis Santacruz curriculum.pdf" download="CV-Luis_Santacruz.pdf">
+                  Descargar CV
+                </a>
+              </Button>
           </motion.div>
         </nav>
 
