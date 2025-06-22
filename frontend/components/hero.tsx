@@ -45,6 +45,14 @@ export default function Hero() {
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button asChild variant="outline" size="lg">
+                <a href="/documents/Luis Santacruz curriculum.pdf" download="CV-Luis_Santacruz.pdf">
+                  Descargar CV
+                </a>
+              </Button>
+            </motion.div>
+
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button asChild variant="outline" size="lg">
                 <Link href="#contacto">Contactar</Link>
               </Button>
             </motion.div>

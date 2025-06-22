@@ -112,7 +112,7 @@ export default function Contact() {
               >
                 <Input
                   type="email"
-                  placeholder="Correo Electrónico"
+                  placeholder="Correo electrónico"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
