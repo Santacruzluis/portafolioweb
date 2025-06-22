@@ -36,7 +36,7 @@ export default function Projects() {
       technologies: "Neo4j, Graph Database",
       description:
         "Proyecto que implementa una base de datos de grafos utilizando Neo4j para el manejo eficiente de relaciones complejas.",
-      image: "/images/neo4j.png?height=200&width=200",
+      image: "/images/neo4j.jpg?height=200&width=150",
       githubUrl: "https://github.com/Acosta-Saul/neo4j-project.git"
     },
   ]

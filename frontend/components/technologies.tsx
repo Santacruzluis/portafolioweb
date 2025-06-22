@@ -3,14 +3,24 @@ import AnimatedTechIcon from "./animated-tech-icon"
 
 export default function Technologies() {
   const technologies = [
-    { name: "HTML5", image: "/images/html-logo.png" },
-    { name: "CSS3", image: "/images/css-logo.png" },
+    { name: "HTML", image: "/images/html-logo.png" },
+    { name: "CSS", image: "/images/css-logo.png" },
     { name: "JavaScript", image: "/images/javascript-logo.png" },
     { name: "React", image: "/images/react-logo.png" },
     { name: "Python", image: "/images/python-logo.png" },
     { name: "Django", image: "/images/django-logo.png" },
     { name: "MongoDB", image: "/images/mongodb-logo.png" },
     { name: "PostgreSQL", image: "/images/postgresql-logo.png" },
+    { name: "Tailwind CSS", image: "/images/tailwind-logo.png" },
+    { name: "Next.js", image: "/images/nextjs-logo.png" },
+    { name: "TypeScript", image: "/images/typescript-logo.png" },
+    { name: "NestJS", image: "/images/nestjs-logo.png" },
+    { name: "Git", image: "/images/git-logo.png" },
+    { name: "GitHub", image: "/images/github-logo.png" },
+    { name: "Flutter", image: "/images/flutter-logo.png" },
+    { name: "Dart", image: "/images/dart-logo.png" },
+    { name: "Neo4j", image: "/images/neo4j-logo.png" },
+    { name: "Flask", image: "/images/flask-logo.png" },
   ]
 
   return (

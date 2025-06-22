@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DatabaseModule } from './database/database.module';
+import { ProyectosModule } from './proyectos/proyectos.module';
+import { TecnologiasModule } from './tecnologias/tecnologias.module';
 
 @Module({
   imports: [
@@ -29,6 +31,8 @@ import { DatabaseModule } from './database/database.module';
       }),
     }),
     DatabaseModule,
+    ProyectosModule,
+    TecnologiasModule,
   ],
   controllers: [AppController],
   providers: [AppService],
