@@ -24,7 +24,7 @@ export default function Projects({ projects }: ProjectsProps) {
               title={project.name}
               technologies={project.tecnologias.map((t: Tecnologia) => t.name).join(', ')}
               description={project.descripcion}
-              image={project.tecnologias.length > 0 ? project.tecnologias[0].imagen : '/images/placeholder.png'}
+              image={project.imagen} 
               index={index}
               githubUrl={project.url_repositorio}
             />

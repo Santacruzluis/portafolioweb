@@ -23,6 +23,9 @@ export class Proyecto {
   @Column('text')
   url_repositorio: string;
 
+  @Column('text', { nullable: true })
+  imagen: string;
+
   @ManyToMany(() => Tecnologia, (tecnologia) => tecnologia.proyectos, {
     cascade: true,
   })

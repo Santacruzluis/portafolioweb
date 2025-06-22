@@ -11,6 +11,9 @@ export class CreateProyectoDto {
   @IsString()
   url_repositorio: string;
 
+  @IsString()
+  imagen: string;
+
   @IsArray()
   @IsInt({ each: true })
   tecnologiasIds: number[];
